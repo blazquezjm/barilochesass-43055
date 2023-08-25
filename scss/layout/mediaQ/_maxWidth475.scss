@@ -1,0 +1,36 @@
+@media (max-width:475px){
+    .grid-footer{
+        @include grid (1fr, 100px 60px 60px 120px);
+        height: 21.875rem;
+        grid-template-areas: 
+        "ubicacion"
+        "telefono"
+        "mail"
+        "redes"
+        ;
+        }
+    
+    .redes-footer{
+        grid-area: redes;
+        width: 100%;
+    }
+    .ubicacion-footer{
+        grid-area: ubicacion;
+        height: 3.75rem;
+        gap: 0;
+        padding-top: 30px;
+        iframe{
+            height: 3rem;
+            width: 12rem;
+        }
+    }
+    .telefono-footer{
+        grid-area: telefono;
+        height: 3.75rem;
+        padding:0 ;
+    }
+    .mail-footer{
+        grid-area: mail;
+        height: 3.75rem;
+    }
+}

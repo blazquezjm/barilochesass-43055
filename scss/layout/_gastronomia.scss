@@ -1,0 +1,70 @@
+.grid-gastronomia{
+    @include grid(1fr, repeat(4,21.875rem))
+}
+
+.restaurantes{
+    grid-row: 1 / 2;
+    @include grid(repeat(4,1fr), 5rem 16.875rem);
+    justify-items: center;
+    h3{
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        font-family: $fuente-titulo;
+        font-size: 36px;
+        font-weight: lighter;
+    }
+    p{
+        font-family: $fuente-general;
+        font-size: 16px;
+    }
+}
+
+.rest1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+    width: 12.5rem;
+    height: 50%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $color-card;
+    h4{
+        font-family: $fuente-general;
+        font-size: 20px;
+    }
+    iframe{
+        width: 80%;
+        height: 9.375rem;
+        align-self: center;
+        border-radius: 50%;
+    }
+}
+.rest2{
+    @extend .rest1;
+    grid-column: 2 / 3;
+}
+.rest3{
+    @extend .rest1;
+    grid-column: 3 / 4;
+}
+.rest4{
+    @extend .rest1;
+    grid-column: 4 / 5;
+}
+
+.cervecerias{
+    @extend .restaurantes;
+    grid-row: 2 / 3;
+}
+
+.chocolaterias{
+    @extend .restaurantes;
+    grid-row: 3 / 4;
+}
+
+.heladerias{
+    @extend .restaurantes;
+    grid-row: 4 / 5;
+}

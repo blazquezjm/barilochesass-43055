@@ -1,0 +1,19 @@
+@import "./base/reset";
+@import "./base/typos";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/lugares";
+@import "./layout/actividades";
+@import "./layout/gastronomia";
+@import "./layout/footer";
+
+@import "./layout/mediaQ/maxwidth910";
+@import "./layout/mediaQ/maxWidth820";
+@import "./layout/mediaQ/maxWidth768";
+@import "./layout/mediaQ/maxWidth600";
+@import "./layout/mediaQ/maxWidth475";
+@import "./layout/mediaQ/maxWidth420"
+

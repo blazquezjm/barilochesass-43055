@@ -1,0 +1,30 @@
+header{
+    @include flex (row, wrap, space-between, center, none);
+    background-color: $color-header;
+}
+.brc{
+    display: flex;
+    h1{
+        letter-spacing: 3px;
+        font-size: 35px;
+        font-family: $fuente-h1;
+    }
+    img{
+        height: 35px;
+        align-self: center;
+    }
+}
+.navbar{
+     @include flex (row, wrap, none, center, .5rem);
+     list-style: none;
+     padding-right: 1rem;
+     li{
+        a{
+            text-decoration: none;
+            color: $color-navbar;
+            font-family: $fuente-general;
+
+        }
+     }
+}
+

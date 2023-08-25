@@ -1,0 +1,63 @@
+.grid-actividades{
+    @include grid (1fr, repeat(3,45rem));
+    margin-bottom:20px;
+}
+.invierno {
+    grid-row: 1 / 2;
+    @include grid (repeat(3,1fr), 5rem 40rem);
+    justify-items: center;
+    padding-right: 1.25rem;   
+    padding-left: 1.25rem;
+    h3{
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        align-self: center;
+        font-family: $fuente-titulo;
+        font-size: 40px;
+        font-weight: lighter;
+    }
+}
+.blancas {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 80%;
+    justify-content: space-between;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-color: $color-header;
+    font-family: $fuente-general;
+    img {
+        width: 120%;
+        height: 15rem;
+        align-self: center;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.438);
+    }
+    button{
+        width: 5rem;
+        align-self: center;
+        justify-content: flex-end;
+        }
+}
+.nordico{
+    @extend .blancas;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.arelauquen{
+    @extend .blancas;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.verano {
+    @extend .invierno;
+    grid-row: 2 / 3;
+}
+
+.todo-ano{
+    @extend .invierno;
+    grid-row: 3 / 4;
+}

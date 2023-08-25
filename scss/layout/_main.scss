@@ -1,0 +1,171 @@
+.img-index{
+    width: 100%;
+    height: 18.75rem;
+    img{
+        width: 100%;
+        height: 18.75rem;
+        object-fit: cover;
+        background-color: $color-header;
+        padding: 0 15px 15px 15px;
+    }
+}
+.grid-main{
+    @include grid (1fr, 6.25rem 9.375rem repeat(3,21rem));
+    
+}
+.titulo-index{
+    font-family: $fuente-titulo;
+    grid-row: 1 / 2;
+    align-self: center;
+    padding-left: 1.25rem;
+    font-size: 45px;
+}
+
+.texto-intro{
+    grid-row: 2 / 3;
+    justify-self: center;
+    font-family: $fuente-general;
+    padding: 0.625rem;
+    
+    p{
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+.info-general{
+    grid-row: 3/ 4;
+    row-gap: 1.875rem;
+    margin-top: 2rem;
+    margin-bottom: 30rem;
+    padding: 0 1.25rem;
+    padding-bottom: 3rem;
+    @include grid (1fr, repeat(3,18.75rem))
+}
+
+.seccion1{
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    background-color: $color-header;
+    font-family: $fuente-general;
+    position: relative;
+    h2{
+        letter-spacing: 2px;
+        font-size: 36px;
+        font-weight: bold;
+        background-color: $color-card;
+        height: 3rem;
+        align-self: flex-start;
+        padding-left: .3125rem;
+        position: absolute;
+        margin-top: -1.5rem;
+        justify-content: center;
+        margin-left: 22rem;
+        font-family: $fuente-general;
+    }
+    p{
+        font-size: 20px;
+        font-weight: lighter;
+        text-indent: 16px;
+        height: 70%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    img{
+        width: 20rem;
+        height: 18.75rem;
+        align-self: center;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429);
+    }
+    button{
+        align-self: flex-end;
+        position: relative;
+        margin-bottom: .625rem;
+        margin-right: .625rem;
+        
+    }
+}.seccion2{
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 80%;
+    background-color: $color-card;
+    font-family: $fuente-general;
+    display: flex;
+    position: relative;
+    h2{
+        letter-spacing: 2px;
+        font-size: 36px;
+        font-weight: bold;
+        background-color: $color-header;
+        height: 3rem;
+        align-self: flex-start;
+        position: absolute;
+        margin-top: -1.5rem;
+        margin-left: 1.25rem;
+        font-family: $fuente-general;
+    }
+    p{
+        font-size: 20px;
+        font-weight: lighter;
+        text-indent: 16px;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    img{
+        width: 18.75rem;
+        height: 18.75rem;
+        align-self: center;
+        box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.429);
+    }
+    button{
+        align-self: flex-end;
+        margin-right: .625rem;
+        margin-bottom: .625rem;
+    }
+}
+
+.seccion3{
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    background-color: $color-header;
+    font-family: $fuente-general;
+    h2{
+        letter-spacing: 2px;
+        font-size: 36px;
+        font-weight: bold;
+        background-color: #E8E8E8;
+        height: 3rem;
+        align-self: flex-start;
+        padding-left: .3125rem;
+        position: absolute;
+        margin-top: -1.5rem;
+        justify-content: center;
+        margin-left: 22rem;
+        font-family: $fuente-general;
+    }
+    p{
+    font-size: 20px;
+    font-weight: lighter;
+    text-indent: 16px;
+    height: 70%;
+    text-align: center;
+    margin-top: 3rem;
+    }
+    img{
+        width: 20rem;
+        height: 18.75rem;
+        align-self: center;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429);
+    }
+    button{
+        align-self: flex-end;
+        position: relative;
+        margin-bottom: .625rem;
+        margin-right: .625rem;
+    }
+}

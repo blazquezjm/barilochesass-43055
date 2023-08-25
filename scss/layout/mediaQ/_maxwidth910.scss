@@ -1,0 +1,74 @@
+@media (max-width:910px){
+    .grid-actividades{
+    @include grid (1fr, repeat(3,75rem))
+    }
+
+    .invierno{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        @include grid(1fr, 4rem repeat(3,1fr));
+        justify-items: center;
+        padding-right: 1.25rem;   
+        padding-left: 1.25rem;
+        gap: 30px;
+        h3{
+            grid-row: 1 / 2;
+            align-self: center;
+        }
+    }
+    
+    .blancas{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+        height: 90%;
+        width: 95%;
+        justify-self: center;
+        @include flex (row, nowrap, center, center, 0);
+        position: relative;
+        img{
+            width: 15rem;
+            height: 110%;
+        }
+    }
+    .nordico{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        text-align: center;
+        @include flex (row, nowrap, center, center, 0);
+        position: relative;
+        img{
+            width: 15rem;
+            height: 110%;
+        }
+    }
+    .arelauquen{
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        text-align: center;
+        @include flex (row, nowrap, center, center, 0);
+        position: relative;
+        img{
+            width: 15rem;
+            height: 110%;
+        }
+    }
+    .verano{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        @include grid(1fr, 4rem repeat(3,1fr));
+        justify-items: center;
+        padding-right: 1.25rem;   
+        padding-left: 1.25rem;
+        gap: 30px;
+    }
+    .todo-ano{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        @include grid(1fr, 4rem repeat(3,1fr));
+        justify-items: center;
+        padding-right: 1.25rem;   
+        padding-left: 1.25rem;
+        gap: 30px;
+    }
+}

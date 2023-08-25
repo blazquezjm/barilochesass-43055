@@ -1,0 +1,808 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Inria+Serif:wght@400;700&family=Londrina+Sketch&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* 
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Inria Serif', serif;
+font-family: 'Londrina Sketch', cursive;
+*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  background-color: #BBBFCA; }
+
+.brc {
+  display: flex; }
+  .brc h1 {
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-family: "Londrina Sketch", cursive; }
+  .brc img {
+    height: 35px;
+    align-self: center; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: none;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding-right: 1rem; }
+  .navbar li a {
+    text-decoration: none;
+    color: #495464;
+    font-family: "Inria Serif", serif; }
+
+.img-index {
+  width: 100%;
+  height: 18.75rem; }
+  .img-index img {
+    width: 100%;
+    height: 18.75rem;
+    object-fit: cover;
+    background-color: #BBBFCA;
+    padding: 0 15px 15px 15px; }
+
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 9.375rem repeat(3, 21rem); }
+
+.titulo-index {
+  font-family: "Fredericka the Great", cursive;
+  grid-row: 1 / 2;
+  align-self: center;
+  padding-left: 1.25rem;
+  font-size: 45px; }
+
+.texto-intro {
+  grid-row: 2 / 3;
+  justify-self: center;
+  font-family: "Inria Serif", serif;
+  padding: 0.625rem; }
+  .texto-intro p {
+    text-align: center;
+    font-size: 24px; }
+
+.info-general {
+  grid-row: 3/ 4;
+  row-gap: 1.875rem;
+  margin-top: 2rem;
+  margin-bottom: 30rem;
+  padding: 0 1.25rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 18.75rem); }
+
+.seccion1 {
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #BBBFCA;
+  font-family: "Inria Serif", serif;
+  position: relative; }
+  .seccion1 h2 {
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #E8E8E8;
+    height: 3rem;
+    align-self: flex-start;
+    padding-left: .3125rem;
+    position: absolute;
+    margin-top: -1.5rem;
+    justify-content: center;
+    margin-left: 22rem;
+    font-family: "Inria Serif", serif; }
+  .seccion1 p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-indent: 16px;
+    height: 70%;
+    text-align: center;
+    margin-top: 1rem; }
+  .seccion1 img {
+    width: 20rem;
+    height: 18.75rem;
+    align-self: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429); }
+  .seccion1 button {
+    align-self: flex-end;
+    position: relative;
+    margin-bottom: .625rem;
+    margin-right: .625rem; }
+
+.seccion2 {
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 80%;
+  background-color: #E8E8E8;
+  font-family: "Inria Serif", serif;
+  display: flex;
+  position: relative; }
+  .seccion2 h2 {
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #BBBFCA;
+    height: 3rem;
+    align-self: flex-start;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: 1.25rem;
+    font-family: "Inria Serif", serif; }
+  .seccion2 p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-indent: 16px;
+    text-align: center;
+    margin-top: 3rem; }
+  .seccion2 img {
+    width: 18.75rem;
+    height: 18.75rem;
+    align-self: center;
+    box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.429); }
+  .seccion2 button {
+    align-self: flex-end;
+    margin-right: .625rem;
+    margin-bottom: .625rem; }
+
+.seccion3 {
+  grid-row: 3 / 4;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  background-color: #BBBFCA;
+  font-family: "Inria Serif", serif; }
+  .seccion3 h2 {
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #E8E8E8;
+    height: 3rem;
+    align-self: flex-start;
+    padding-left: .3125rem;
+    position: absolute;
+    margin-top: -1.5rem;
+    justify-content: center;
+    margin-left: 22rem;
+    font-family: "Inria Serif", serif; }
+  .seccion3 p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-indent: 16px;
+    height: 70%;
+    text-align: center;
+    margin-top: 3rem; }
+  .seccion3 img {
+    width: 20rem;
+    height: 18.75rem;
+    align-self: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429); }
+  .seccion3 button {
+    align-self: flex-end;
+    position: relative;
+    margin-bottom: .625rem;
+    margin-right: .625rem; }
+
+h2 {
+  padding-left: 1.25rem;
+  align-self: center;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 45px;
+  font-weight: lighter; }
+
+.grid-lugares {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(25rem);
+  width: 100%;
+  padding-bottom: 2rem; }
+
+.cerros, .lagos, .ciudad {
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5rem 25rem;
+  justify-items: center;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem; }
+  .cerros h3, .lagos h3, .ciudad h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: "Fredericka the Great", cursive; }
+
+.catedral, .tronador, .gutierrez, .iglesia, .campanario, .moreno, .suiza, .huapi, .civico {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  height: 23rem;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.575);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 20px; }
+  .catedral img, .tronador img, .gutierrez img, .iglesia img, .campanario img, .moreno img, .suiza img, .huapi img, .civico img {
+    width: 100%;
+    height: 10rem;
+    justify-items: center;
+    object-fit: cover; }
+  .catedral h4, .tronador h4, .gutierrez h4, .iglesia h4, .campanario h4, .moreno h4, .suiza h4, .huapi h4, .civico h4 {
+    font-family: "Inria Serif", serif;
+    font-size: 28px;
+    font-weight: bold; }
+  .catedral p, .tronador p, .gutierrez p, .iglesia p, .campanario p, .moreno p, .suiza p, .huapi p, .civico p {
+    font-family: "Inria Serif", serif;
+    font-size: 16px; }
+
+.tronador, .gutierrez, .iglesia {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding-bottom: 0;
+  padding-top: 20px; }
+
+.campanario, .moreno, .suiza {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3; }
+
+.lagos {
+  grid-row: 2 / 3; }
+
+.ciudad {
+  grid-row: 3 / 4; }
+
+.grid-actividades {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 45rem);
+  margin-bottom: 20px; }
+
+.invierno, .verano, .todo-ano {
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5rem 40rem;
+  justify-items: center;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem; }
+  .invierno h3, .verano h3, .todo-ano h3 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    align-self: center;
+    font-family: "Fredericka the Great", cursive;
+    font-size: 40px;
+    font-weight: lighter; }
+
+.blancas, .nordico, .arelauquen {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 80%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  background-color: #BBBFCA;
+  font-family: "Inria Serif", serif; }
+  .blancas img, .nordico img, .arelauquen img {
+    width: 120%;
+    height: 15rem;
+    align-self: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.438); }
+  .blancas button, .nordico button, .arelauquen button {
+    width: 5rem;
+    align-self: center;
+    justify-content: flex-end; }
+
+.nordico {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3; }
+
+.arelauquen {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3; }
+
+.verano {
+  grid-row: 2 / 3; }
+
+.todo-ano {
+  grid-row: 3 / 4; }
+
+.grid-gastronomia {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 21.875rem); }
+
+.restaurantes, .cervecerias, .chocolaterias, .heladerias {
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5rem 16.875rem;
+  justify-items: center; }
+  .restaurantes h3, .cervecerias h3, .chocolaterias h3, .heladerias h3 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    font-family: "Fredericka the Great", cursive;
+    font-size: 36px;
+    font-weight: lighter; }
+  .restaurantes p, .cervecerias p, .chocolaterias p, .heladerias p {
+    font-family: "Inria Serif", serif;
+    font-size: 16px; }
+
+.rest1, .rest2, .rest3, .rest4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  text-align: center;
+  width: 12.5rem;
+  height: 50%;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #E8E8E8; }
+  .rest1 h4, .rest2 h4, .rest3 h4, .rest4 h4 {
+    font-family: "Inria Serif", serif;
+    font-size: 20px; }
+  .rest1 iframe, .rest2 iframe, .rest3 iframe, .rest4 iframe {
+    width: 80%;
+    height: 9.375rem;
+    align-self: center;
+    border-radius: 50%; }
+
+.rest2 {
+  grid-column: 2 / 3; }
+
+.rest3 {
+  grid-column: 3 / 4; }
+
+.rest4 {
+  grid-column: 4 / 5; }
+
+.cervecerias {
+  grid-row: 2 / 3; }
+
+.chocolaterias {
+  grid-row: 3 / 4; }
+
+.heladerias {
+  grid-row: 4 / 5; }
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1.2fr;
+  grid-template-rows: repeat(2, 6.25rem);
+  width: 100%;
+  height: 12.5rem;
+  background-color: rgba(73, 84, 101, 0.583);
+  color: white;
+  font-family: "Inria Serif", serif; }
+
+.ubicacion-footer {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  height: 6.25rem;
+  width: 100%;
+  text-align: center;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-flow: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; }
+  .ubicacion-footer iframe {
+    width: 10rem;
+    height: 5rem;
+    align-self: center; }
+
+.redes-footer {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 50%);
+  align-items: center;
+  text-align: center; }
+  .redes-footer h3 {
+    grid-row: 1 / 2;
+    font-size: 26px; }
+  .redes-footer h5 {
+    grid-row: 1 / 2;
+    font-size: 26px; }
+  .redes-footer div {
+    grid-row: 2 / 3;
+    justify-content: center; }
+
+.red {
+  justify-self: center; }
+  .red img {
+    height: 3.125rem;
+    width: 3.125rem; }
+
+.telefono-footer {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  width: 100%;
+  text-align: center;
+  padding-top: 3%; }
+
+.mail-footer {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  width: 100%;
+  text-align: center; }
+
+@media (max-width: 910px) {
+  .grid-actividades {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 75rem); }
+  .invierno, .verano, .todo-ano {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem repeat(3, 1fr);
+    justify-items: center;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    gap: 30px; }
+    .invierno h3, .verano h3, .todo-ano h3 {
+      grid-row: 1 / 2;
+      align-self: center; }
+  .blancas, .nordico, .arelauquen {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+    height: 90%;
+    width: 95%;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative; }
+    .blancas img, .nordico img, .arelauquen img {
+      width: 15rem;
+      height: 110%; }
+  .nordico {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative; }
+    .nordico img {
+      width: 15rem;
+      height: 110%; }
+  .arelauquen {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative; }
+    .arelauquen img {
+      width: 15rem;
+      height: 110%; }
+  .verano {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem repeat(3, 1fr);
+    justify-items: center;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    gap: 30px; }
+  .todo-ano {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem repeat(3, 1fr);
+    justify-items: center;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    gap: 30px; } }
+
+@media (max-width: 820px) {
+  .grid-gastronomia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 37.5rem); }
+  .restaurantes, .cervecerias, .chocolaterias, .heladerias {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5rem repeat(2, 16.875rem);
+    justify-items: center; }
+    .restaurantes h3, .cervecerias h3, .chocolaterias h3, .heladerias h3 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2; }
+  .rest1, .rest2, .rest3, .rest4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+  .rest2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; }
+  .rest3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; }
+  .rest4 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4; }
+  .cervecerias {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5rem repeat(2, 16.875rem);
+    justify-items: center; }
+    .cervecerias h3 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2; }
+  .chocolaterias {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5rem repeat(2, 16.875rem);
+    justify-items: center; }
+    .chocolaterias h3 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2; }
+  .heladerias {
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5rem repeat(2, 16.875rem);
+    justify-items: center; }
+    .heladerias h3 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2; } }
+
+@media (max-width: 768px) {
+  .grid-actividades {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 120rem); }
+  .invierno, .verano, .todo-ano {
+    gap: 1%; }
+  .verano {
+    gap: 1%; }
+  .invierno, .verano, .todo-ano {
+    gap: 1%; }
+  .blancas, .nordico, .arelauquen {
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    justify-content: space-between; }
+    .blancas img, .nordico img, .arelauquen img {
+      width: 120%;
+      height: 15rem; }
+  .nordico {
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    justify-content: space-between; }
+    .nordico img {
+      width: 120%;
+      height: 15rem; }
+  .arelauquen {
+    flex-direction: column;
+    width: 80%;
+    height: 90%; }
+    .arelauquen img {
+      width: 120%;
+      height: 15rem; }
+  .grid-lugares {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 43rem);
+    gap: 30px;
+    margin-bottom: 30px; }
+  .cerros, .lagos, .ciudad {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(3, 12rem);
+    gap: 5px; }
+    .cerros h3, .lagos h3, .ciudad h3 {
+      grid-column: 1 / 2; }
+  .catedral, .tronador, .gutierrez, .iglesia, .campanario, .moreno, .suiza, .huapi, .civico {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    flex-direction: row;
+    height: 12rem;
+    align-items: center;
+    padding-bottom: 0; }
+    .catedral img, .tronador img, .gutierrez img, .iglesia img, .campanario img, .moreno img, .suiza img, .huapi img, .civico img {
+      width: 12.5rem;
+      height: 100%; }
+  .tronador, .gutierrez, .iglesia {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    flex-direction: row;
+    height: 12rem;
+    align-items: center;
+    padding-top: 0; }
+    .tronador img, .gutierrez img, .iglesia img {
+      width: 12.5rem;
+      height: 100%; }
+  .campanario, .moreno, .suiza {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    flex-direction: row;
+    align-items: center;
+    height: 12rem;
+    padding-bottom: 0; }
+    .campanario img, .moreno img, .suiza img {
+      width: 12.5rem;
+      height: 100%; }
+  .lagos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(3, 12rem);
+    height: 40rem; }
+    .lagos h3 {
+      grid-column: 1 / 2; }
+  .ciudad {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(3, 12rem);
+    height: 40rem; }
+    .ciudad h3 {
+      grid-column: 1 / 2; }
+  .grid-footer {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 120px 40px 80px;
+    height: 15rem;
+    grid-template-areas: "redes redes" "mail ubicacion" "telefono ubicacion"; }
+  .redes-footer {
+    grid-area: redes;
+    height: 7.5rem;
+    gap: 0; }
+  .ubicacion-footer {
+    grid-area: ubicacion;
+    height: 3.75rem;
+    gap: 0;
+    padding-top: 30px; }
+    .ubicacion-footer iframe {
+      height: 3rem;
+      width: 12rem; }
+  .telefono-footer {
+    grid-area: telefono;
+    height: 3.75rem;
+    padding: 0; }
+  .mail-footer {
+    grid-area: mail;
+    height: 3.75rem; } }
+
+@media (max-width: 600px) {
+  .grid-lugares {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 80rem);
+    gap: 30px;
+    margin-bottom: 30px; }
+  .cerros, .lagos, .ciudad {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(3, 25rem);
+    gap: 5px; }
+    .cerros h3, .lagos h3, .ciudad h3 {
+      grid-column: 1 / 2; }
+  .catedral, .tronador, .gutierrez, .iglesia, .campanario, .moreno, .suiza, .huapi, .civico {
+    flex-direction: column;
+    height: 25rem; }
+    .catedral img, .tronador img, .gutierrez img, .iglesia img, .campanario img, .moreno img, .suiza img, .huapi img, .civico img {
+      width: 100%;
+      height: 12.5rem; } }
+
+@media (max-width: 475px) {
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 60px 60px 120px;
+    height: 21.875rem;
+    grid-template-areas: "ubicacion" "telefono" "mail" "redes"; }
+  .redes-footer {
+    grid-area: redes;
+    width: 100%; }
+  .ubicacion-footer {
+    grid-area: ubicacion;
+    height: 3.75rem;
+    gap: 0;
+    padding-top: 30px; }
+    .ubicacion-footer iframe {
+      height: 3rem;
+      width: 12rem; }
+  .telefono-footer {
+    grid-area: telefono;
+    height: 3.75rem;
+    padding: 0; }
+  .mail-footer {
+    grid-area: mail;
+    height: 3.75rem; } }
+
+@media (max-width: 420px) {
+  .grid-gastronomia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1200px; }
+  .title {
+    padding: 0;
+    text-align: center; }
+  .restaurantes, .cervecerias, .chocolaterias, .heladerias {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(4, 16.75rem);
+    justify-items: center; }
+    .restaurantes h3, .cervecerias h3, .chocolaterias h3, .heladerias h3 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2; }
+  .rest1, .rest2, .rest3, .rest4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+  .rest2 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; }
+  .rest3 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5; }
+  .rest4 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6; }
+  .cervecerias {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(4, 16.75rem);
+    justify-items: center; }
+    .cervecerias h3 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2; }
+  .chocolaterias {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(4, 16.75rem);
+    justify-items: center; }
+    .chocolaterias h3 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2; }
+  .heladerias {
+    grid-row: 4 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(4, 16.75rem);
+    justify-items: center; }
+    .heladerias h3 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2; } }
