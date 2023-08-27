@@ -114,7 +114,7 @@ header {
     text-align: center;
     margin-top: 1rem; }
   .seccion1 img {
-    width: 20rem;
+    width: 50rem;
     height: 18.75rem;
     align-self: center;
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429); }
@@ -150,7 +150,7 @@ header {
     text-align: center;
     margin-top: 3rem; }
   .seccion2 img {
-    width: 18.75rem;
+    width: 50rem;
     height: 18.75rem;
     align-self: center;
     box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.429); }
@@ -187,7 +187,7 @@ header {
     text-align: center;
     margin-top: 3rem; }
   .seccion3 img {
-    width: 20rem;
+    width: 50rem;
     height: 18.75rem;
     align-self: center;
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429); }
