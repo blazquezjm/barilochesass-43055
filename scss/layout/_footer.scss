@@ -13,8 +13,9 @@
     height:  6.25rem;
     width: 100%;
     text-align: center;
-    padding-top: 20%;
-    @include flex(column, 0, center, center, 1rem);
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
     iframe{
         width: 10rem;
         height: 5rem;

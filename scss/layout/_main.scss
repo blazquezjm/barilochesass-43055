@@ -9,10 +9,7 @@
         padding: 0 15px 15px 15px;
     }
 }
-.grid-main{
-    @include grid (1fr, 6.25rem 9.375rem repeat(3,21rem));
-    
-}
+
 .titulo-index{
     font-family: $fuente-titulo;
     grid-row: 1 / 2;
@@ -35,26 +32,26 @@
 
 .info-general{
     grid-row: 3/ 4;
-    row-gap: 1.875rem;
+    row-gap: 2rem;
     margin-top: 2rem;
-    margin-bottom: 30rem;
     padding: 0 1.25rem;
     padding-bottom: 3rem;
-    @include grid (1fr, repeat(3,18.75rem))
+    @include grid (1fr, repeat(3,1fr))
 }
 
 .seccion1{
     grid-row: 1 / 2;
     width: 100%;
-    height: 80%;
+    height: 85%;
     display: flex;
     align-items: center;
     background-color: $color-header;
     font-family: $fuente-general;
     position: relative;
     h2{
+        text-align: center;
         letter-spacing: 2px;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: bold;
         background-color: $color-card;
         height: 3rem;
@@ -71,11 +68,12 @@
         font-weight: lighter;
         text-indent: 16px;
         height: 70%;
+        width: 100%;
         text-align: center;
         margin-top: 1rem;
     }
     img{
-        width: 50rem;
+        width: 30rem;
         height: 18.75rem;
         align-self: center;
         box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429);
@@ -90,14 +88,15 @@
 }.seccion2{
     grid-row: 2 / 3;
     width: 100%;
-    height: 80%;
+    height: 85%;
     background-color: $color-card;
     font-family: $fuente-general;
     display: flex;
     position: relative;
     h2{
+        text-align: center;
         letter-spacing: 2px;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: bold;
         background-color: $color-header;
         height: 3rem;
@@ -108,6 +107,7 @@
         font-family: $fuente-general;
     }
     p{
+        width: 100%;
         font-size: 20px;
         font-weight: lighter;
         text-indent: 16px;
@@ -115,7 +115,7 @@
         margin-top: 3rem;
     }
     img{
-        width: 50rem;
+        width: 30rem;
         height: 18.75rem;
         align-self: center;
         box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.429);
@@ -130,13 +130,15 @@
 .seccion3{
     grid-row: 3 / 4;
     width: 100%;
-    height: 80%;
+    height: 85%;
     display: flex;
     background-color: $color-header;
     font-family: $fuente-general;
+    position: relative;
     h2{
+        text-align: center;
         letter-spacing: 2px;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: bold;
         background-color: #E8E8E8;
         height: 3rem;
@@ -153,11 +155,12 @@
     font-weight: lighter;
     text-indent: 16px;
     height: 70%;
+    width: 100%;
     text-align: center;
     margin-top: 3rem;
     }
     img{
-        width: 50rem;
+        width: 30rem;
         height: 18.75rem;
         align-self: center;
         box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429);
