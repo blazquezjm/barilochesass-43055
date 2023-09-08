@@ -8,16 +8,19 @@ header{
         letter-spacing: 3px;
         font-size: 35px;
         font-family: $fuente-h1;
+        font-weight: bold;
     }
     img{
         height: 35px;
         align-self: center;
     }
 }
-.navbar{
+.nav{
      @include flex (row, wrap, none, center, .5rem);
      list-style: none;
      padding-right: 1rem;
+     text-align: center;
+     align-content: space-between;
      li{
         a{
             text-decoration: none;
