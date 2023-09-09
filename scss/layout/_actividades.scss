@@ -22,7 +22,7 @@
     grid-row: 2 / 3;
     width: 80%;
     justify-content: space-between;
-    
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -40,6 +40,7 @@
         align-self: center;
         justify-content: flex-end;
         a{
+            color: black;
             text-decoration: none;
         }
         }

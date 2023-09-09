@@ -122,6 +122,9 @@ header {
     position: relative;
     margin-bottom: .625rem;
     margin-right: .625rem; }
+    .seccion1 button a {
+      color: black;
+      text-decoration: none; }
 
 .seccion2 {
   grid-row: 2 / 3;
@@ -159,6 +162,9 @@ header {
     align-self: flex-end;
     margin-right: .625rem;
     margin-bottom: .625rem; }
+    .seccion2 button a {
+      color: black;
+      text-decoration: none; }
 
 .seccion3 {
   grid-row: 3 / 4;
@@ -200,6 +206,9 @@ header {
     position: relative;
     margin-bottom: .625rem;
     margin-right: .625rem; }
+    .seccion3 button a {
+      color: black;
+      text-decoration: none; }
 
 h2 {
   padding-left: 1.25rem;
@@ -243,7 +252,8 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  border: 1px solid black; }
   .catedral img, .tronador img, .gutierrez img, .iglesia img, .campanario img, .moreno img, .suiza img, .huapi img, .civico img {
     width: 100%;
     height: 10rem;
@@ -300,6 +310,7 @@ h2 {
   grid-row: 2 / 3;
   width: 80%;
   justify-content: space-between;
+  padding-bottom: 5px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -316,6 +327,7 @@ h2 {
     align-self: center;
     justify-content: flex-end; }
     .blancas button a, .nordico button a, .arelauquen button a {
+      color: black;
       text-decoration: none; }
 
 .nordico {
@@ -392,7 +404,8 @@ h2 {
   grid-row: 4 / 5; }
 
 .contacto {
-  padding-left: 1.25rem; }
+  padding-left: 1.25rem;
+  font-family: "Inria Serif", serif; }
 
 .formulario-contacto {
   width: 100%;
@@ -400,7 +413,8 @@ h2 {
   padding: 20px 3% 0 3%;
   display: flex;
   flex-direction: column;
-  gap: 15px; }
+  gap: 15px;
+  font-family: "Inria Serif", serif; }
   .formulario-contacto label {
     padding: 0 20px; }
     .formulario-contacto label input {
